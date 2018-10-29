@@ -1,4 +1,6 @@
-# [Classe para parsear telefone]https://github.com/stivehawk/telefone-parser/blob/master/TelefoneParser/Telefone.cs
+# Classe de parsemaento de telefone
+
+[Link do source]https://github.com/stivehawk/telefone-parser/blob/master/TelefoneParser/Telefone.cs
 
 ```
 var telefone = Telefone.Parse("99999-9999")
