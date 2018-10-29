@@ -9,9 +9,9 @@ namespace TelefoneParser.Tests
         /* Teste de conteúdo parseado */
         [DataTestMethod]
         [DataRow("911111111", null)]
-        [DataRow("77 911111111", null)]
+        [DataRow("77911111111", null)]
 
-        [DataRow("55 77 911111111", "55")] // Sem máscara
+        [DataRow("5577911111111", "55")] // Sem máscara
         [DataRow("+55 (77) 911111111", "55")] // Com máscara
         public void CodigoPais_Parseado(string telefone, string codigoEsperado)
         {
@@ -22,10 +22,10 @@ namespace TelefoneParser.Tests
         [DataTestMethod]
         [DataRow("911111111", null)]
 
-        [DataRow("77 911111111", "77")] // Sem máscara
+        [DataRow("77911111111", "77")] // Sem máscara
         [DataRow("(77) 91111-1111", "77")] // Com máscara
 
-        [DataRow("55 77 911111111", "77")] // Sem máscara
+        [DataRow("5577911111111", "77")] // Sem máscara
         [DataRow("+55 (77) 91111-1111", "77")] // Com máscara
         public void CodigoEstado_Parseado(string telefone, string codigoEsperado)
         {
@@ -40,10 +40,10 @@ namespace TelefoneParser.Tests
         [DataRow("911111111", "911111111")] // Sem máscara
         [DataRow("91111-1111", "911111111")] // Com máscara
 
-        [DataRow("77 911111111", "911111111")] // Sem máscara
+        [DataRow("77911111111", "911111111")] // Sem máscara
         [DataRow("(77) 91111-1111", "911111111")] // Com máscara
 
-        [DataRow("55 77 911111111", "911111111")] // Sem máscara
+        [DataRow("5577911111111", "911111111")] // Sem máscara
         [DataRow("+55 (77) 91111-1111", "911111111")] // Com máscara
         public void Numero_Parseado(string telefone, string numeroEsperado)
         {
@@ -89,12 +89,10 @@ namespace TelefoneParser.Tests
 
         [DataRow("91111-1111")] // Celular formatado 1
         [DataRow("9.1111.1111")] // Celular formatado 2
-
-        [DataRow("77 911111111")] // Celular com DDD
+        
         [DataRow("(77) 91111-1111")] // Celular com DDD formatado
         [DataRow("77911111111")] // Celular com DDD sem formatação
-
-        [DataRow("55 77 911111111")] // Celular com código de país + DDD
+        
         [DataRow("+55 (77) 91111-1111")] // Celular com código de país + DDD formatado
         [DataRow("5577911111111")] // Celular com código de país + DDD sem formatação
         public void TelefoneValido_Verdadeiro(string telefone)
