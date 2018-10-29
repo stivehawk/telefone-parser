@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefoneParser", "TelefoneParser\TelefoneParser.csproj", "{610701E4-7721-40F8-8ABD-A888EF716FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefoneParser.Tests", "TelefoneParser.Tests\TelefoneParser.Tests.csproj", "{0AA7A396-9765-4A42-BEB7-58505969B1E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{610701E4-7721-40F8-8ABD-A888EF716FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610701E4-7721-40F8-8ABD-A888EF716FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610701E4-7721-40F8-8ABD-A888EF716FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610701E4-7721-40F8-8ABD-A888EF716FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA7A396-9765-4A42-BEB7-58505969B1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA7A396-9765-4A42-BEB7-58505969B1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA7A396-9765-4A42-BEB7-58505969B1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA7A396-9765-4A42-BEB7-58505969B1E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5B2EC32-A7CB-4B9E-A38D-116C2A7116DC}
+	EndGlobalSection
+EndGlobal
