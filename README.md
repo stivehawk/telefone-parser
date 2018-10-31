@@ -2,7 +2,7 @@
 
 [Link do source]https://github.com/stivehawk/telefone-parser/blob/master/TelefoneParser/Telefone.cs
 
-```
+```C#
 var telefone = Telefone.Parse("99999-9999")
 ```
 
@@ -13,7 +13,7 @@ Exemplo de formatos válidos:
 - +55 (77) 91111-1111
 
 Exemplo de parseamento:
-```
+```C#
 var telefone = Telefone.Parse("+55 (11) 91111-1111")
 
 var telefoneValido = telefone.TelefoneValido; // Código do estado e número são válidos
